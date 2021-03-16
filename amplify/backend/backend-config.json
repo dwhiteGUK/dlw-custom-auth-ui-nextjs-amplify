@@ -1,6 +1,6 @@
 {
   "auth": {
-    "nextauthenticatione17031ec": {
+    "dlwamplifyauthdemo4f490bc5": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

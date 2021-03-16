@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "nextauthenticatione17031ec_identitypool_e17031ec",
+    "identityPoolName": "dlwamplifyauthdemo4f490bc5_identitypool_4f490bc5",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "nextaue17031ec",
-    "userPoolName": "nextauthenticatione17031ec_userpool_e17031ec",
+    "resourceNameTruncated": "dlwamp4f490bc5",
+    "userPoolName": "dlwamplifyauthdemo4f490bc5_userpool_4f490bc5",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "nextaue17031ec_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "dlwamp4f490bc5_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "e17031ec",
-    "resourceName": "nextauthenticatione17031ec",
+    "sharedId": "4f490bc5",
+    "resourceName": "dlwamplifyauthdemo4f490bc5",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
