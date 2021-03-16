@@ -5,7 +5,7 @@ export default function Register({ setStatus, setUser }) {
 
   async function signUp({ email, username, password }) {
     try {
-      const { user } = await Auth.signUp({
+      await Auth.signUp({
         username,
         password,
         attributes: {

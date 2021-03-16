@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import { Hub } from 'aws-amplify'
+import { useState } from 'react'
 import Head from 'next/head'
 
 import Register from '../components/register'
@@ -16,7 +15,7 @@ export default function Home() {
         <title>Authentication with Amplify, React Hook form and Tailwind CSS</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main>X
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md w-full space-y-8">
             <div>
@@ -28,7 +27,7 @@ export default function Home() {
 
             {status === 'sign-in' ? <SignIn setStatus={setStatus} /> : null}
             {status === 'register' ? <Register setStatus={setStatus} setUser={setUser} /> : null}
-            {status === 'confirm' ? <Confirm user={user} /> : null}
+            {status === 'confirm' ? <Confirm setUser={setUser} user={user} /> : null}
           </div>
         </div>
       </main>

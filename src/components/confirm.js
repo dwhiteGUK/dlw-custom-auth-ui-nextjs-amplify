@@ -1,8 +1,7 @@
 import { Auth } from 'aws-amplify';
 import { useForm } from "react-hook-form";
 import { useRouter } from 'next/router'
-export default function Register({ user }) {
-  console.log('🚀 ~ file: confirm.js ~ line 5 ~ Register ~ user', user)
+export default function Register({ user, setUser }) {
   const { register, handleSubmit } = useForm();
   const router = useRouter()
 
@@ -11,6 +10,8 @@ export default function Register({ user }) {
       await Auth.confirmSignUp(user.username, code);
 
       await Auth.signIn(user.username, user.password);
+
+      setUser(null)
 
       router.push('/client-protected')
     } catch (error) {
